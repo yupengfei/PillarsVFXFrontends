@@ -1,0 +1,51 @@
+body{
+	min-width:1000px;
+  min-height:804px; 
+  background-color:#2d2d2d; 
+}
+#login_indexPage{
+   width:48%;
+   min-width:480px;
+   min-height:297px;
+   background-color:#ffffff;
+   margin:25.2% 25.9% 25.2% 25.9%;
+   
+   border-radius:10px;
+
+}
+.login_indexPage_userDiv{
+    width:63.3333%;
+    min-width:304px;  
+    min-height:55px;
+  
+}
+.login_indexPage_userImageDiv
+{   clear:left;
+	  float:left;
+	
+   	/*margin-top:7.083%;*/
+    margin: 34px  4.7916% 43px  17.708%; 
+    border:1px solid #e4e4e4;
+
+}
+.login_indexPage_userNameDiv{
+    float:left;
+   /* margin-left:4.7916%;
+    margin-top:34px;
+    margin-right:19.16%;*/
+    position:relative;
+    top:34px;
+    left:0px;
+}
+.user_Input{
+    width:51.666667%;
+    min-width:248px;
+    min-height:54px;
+    border-radius:8px;
+}
+img{
+   display:block;
+   max-width:100%;
+   height:auto;
+
+}
