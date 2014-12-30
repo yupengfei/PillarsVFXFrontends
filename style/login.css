@@ -8,10 +8,9 @@ body{
    min-width:480px;
    min-height:297px;
    background-color:#ffffff;
-   margin:25.2% 25.9% 25.2% 25.9%;
-   
+   margin:25.2% 25.9% 25.2% 25.9%; 
    border-radius:10px;
-
+   display:flex;
 }
 .login_indexPage_userDiv{
     width:63.3333%;
@@ -41,6 +40,8 @@ body{
     width:51.666667%;
     min-width:248px;
     min-height:54px;
+    -moz-border-radius:8px;
+    -webkit-border-radius:8px;  /*p106*/
     border-radius:8px;
 }
 img{
