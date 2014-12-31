@@ -3,50 +3,54 @@ body{
   min-height:804px; 
   background-color:#2d2d2d; 
 }
+/*#llogin_indexPage_userName
+{
+  clear:left;
+  float:left;
+}
+#login_indexPage_userPassword{
+  float:left;
+
+}*/
+[placeholder]
+{
+  font-size:20px;
+  font-family:"宋体－简","黑体",serif; 
+}
 #login_indexPage{
    width:48%;
-   min-width:480px;
    min-height:297px;
    background-color:#ffffff;
-   margin:25.2% 25.9% 25.2% 25.9%; 
    border-radius:10px;
+   margin: 0 auto;
    display:flex;
+
 }
-.login_indexPage_userDiv{
+/*.login_indexPage_userDiv{
     width:63.3333%;
     min-width:304px;  
     min-height:55px;
   
-}
-.login_indexPage_userImageDiv
-{   clear:left;
-	  float:left;
-	
-   	/*margin-top:7.083%;*/
-    margin: 34px  4.7916% 43px  17.708%; 
-    border:1px solid #e4e4e4;
+}*/
 
+
+.login_indexPage_userImageDiv
+{   
+	  /*position:relative;*/
+    display: block;
+    width: 95%;
+    text-align: center;
+    margin: 0 auto;
+    
 }
-.login_indexPage_userNameDiv{
-    float:left;
-   /* margin-left:4.7916%;
-    margin-top:34px;
-    margin-right:19.16%;*/
-    position:relative;
-    top:34px;
-    left:0px;
+.login_indexPage_userImageDiv img{
+  width:10%;
+  height: 100px;
 }
 .user_Input{
-    width:51.666667%;
-    min-width:248px;
-    min-height:54px;
-    -moz-border-radius:8px;
-    -webkit-border-radius:8px;  /*p106*/
-    border-radius:8px;
-}
-img{
-   display:block;
-   max-width:100%;
-   height:auto;
-
+  height: 60px;
+  padding: 0;
+  margin: 0;
+  margin: 0 auto;
+  
 }
