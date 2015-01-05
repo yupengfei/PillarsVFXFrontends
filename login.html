@@ -5,7 +5,9 @@
 	<meta charset="utf-8" />
 	<meta  name="viewport" content="width=device-width,initial-scale=1.0">
 	<link href="style/login.css" rel="stylesheet"  type="text/css" />
-	
+	<script language="javaScript"  src="scripts/jquery.js"></script>
+    <script language="javaScript"  src="scripts/login.js"></script>
+
 </head>
 <body>
 <div  id="login_indexPage">
@@ -14,19 +16,17 @@
 		<div  class="login_indexPage_userDiv">
 		    	<img   src="img/user.png" />
 		    <div  class="inputNameDiv">
-            	<input  placeholder="用户名"  id="userName"/>
+            	<input  placeholder="用户名"  type="text"  id="userName"  /> <!-- onblur="checkUserName()" -->
             </div>
 		</div>
 		<div  class="login_indexPage_userDiv">
 		    	<img   src="img/passWord.png" />
 		    <div  class="inputNameDiv">
-            	<input  placeholder="密码 "  id="userPassword"/>
+            	<input  placeholder="密码 "  id="userPassword"  type="password"  /> <!-- onblur="checkUserPassword()" -->
             </div>
 		</div>
 		<div class="loginPage_loginButton_Div">
-           <input  type="submit"   id="loginPage_loginButton"  value="登陆" />
-
-
+           <input  type="submit"   id="loginPage_loginButton"  value="登陆"   /><!-- onclick="checkUserNamePassword()" -->
 		</div>
 		
    
@@ -35,6 +35,7 @@
 
 
 
+ <script data-main="js/login" language="JavaScript" defer async="true" src="jslib/r.js"></script>
 
 
 

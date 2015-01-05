@@ -5,22 +5,21 @@
   	<meta charset="utf-8" />
   	<meta  name="viewport" content="width=device-width,initial-scale=1.0">
   	<link href="style/cameraLens.css" rel="stylesheet"  type="text/css" />
-  	<script  type="text/javaScript">
-  		 $(document).ready(function()
-  		 {
-              $(".drop_btn_image").click(function()
-              {
-                $(this).next("#drop_btn_right_text_List").slideDown(500);
+  	<link  href="jquery.js"/>
+    <script language="javaScript"  src="scripts/jquery.js"></script>
+  	<script  type="text/javaScript"   language='javascript'>
 
-              }
+        function  cameralList(str)
+        {
+			var obj = $("#"+str).css("display");
 
-
-
-          );
-
-
-  		 });
-
+			if(obj=='none')
+			{
+				$("#"+str).show(500);
+			}else{
+				$("#"+str).hide(500);
+			}
+        }
 
   	</script>
 </head> 
@@ -28,7 +27,7 @@
          <div class="page"> 
 	        
 	        <div class="nav_banner">
-	            <div class="nav_lefts">
+	            <div class="nav_left">
 			        <ul >
 			            <li  class="liStyle"><a  href="#">logo<a></li>
 			            <li  class="liStyle"><a  href="#">项目</a></li>
@@ -40,7 +39,7 @@
 			    </div>
 			    <div class="nav_right">
 			        <ul>
-			            <li  class="liStyle"><img src="img/user.png"/></a></li>
+			            <li  class="liStyle"><a  href="#"><img src="img/user.png"/></a></li> 
 			            <li  class="liStyle"><a  href="#">用户名</a></li> 
 			            <li  class="liStyle"><a  href="#"><img src="img/configuration.png"/></a></li>
 			            <li  class="liStyle"><a  href="#">设置</a></li>
@@ -74,15 +73,23 @@
 		         </div>
 		         <div  class="section_Left">
 		         	 <div class="drop_btn_image">
-		         	 	<img  src="img/Triangle1.png"/> 
+		         	 	<img  src="img/Triangle1.png"   onclick="cameralList('drop_btn_right_text_List')"/> 
 		         	 </div>
-		         	 <div  class="drop_btn_right_text">镜头列表</div>
+		         	<!--  <div  class="drop_btn_right_text"  onclick="cameralList('drop_btn_right_text_List')">镜头列表</div>
 		         	 <div  id="drop_btn_right_text_List">
 	                     <div  class="drop_btn_dropDown_text">角色</div>
 	                     <div  class="drop_btn_dropDown_text">道具</div>
 	                     <div  class="drop_btn_dropDown_text">镜头</div>
 	                     <div  class="drop_btn_dropDown_text">特效</div>
-	                 </div>
+	                 </div> -->
+	                 <h4 class="drop_btn_right_text" >镜头列表</h4>
+		         	 <ul id="drop_btn_right_text_List">
+	                     <li  class="drop_btn_dropDown_text"><a href="#">角色</a></li>
+	                     <li class="drop_btn_dropDown_text"><a href="#">道具</a></li>
+	                     <li  class="drop_btn_dropDown_text"><a href="#">镜头</a></li>
+	                     <li  class="drop_btn_dropDown_text"><a href="#">特效</a></li>
+	                 </ul>
+
 		        </div>
 
 		        <div  class="section_Right">

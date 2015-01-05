@@ -1,0 +1,108 @@
+/* CSS Document */
+body,body *{
+}
+body{
+  background-color:#F6F6F6;
+  font-family:'寰蒋闆呴粦';
+  margin:0;
+  padding:0;
+}
+ul,li,span,div,p,h1,h2,h3,h4,h5{
+  margin:0;
+  padding:0;
+}
+ul,li{
+  list-style:none;
+}
+a{
+  text-decoration:none;
+  color:#09F;
+}
+.logo{
+  width:200px;
+  height:85px;
+  float:left;
+  background:url(../img/adminlogo.png) #25AAE3;
+  cursor:pointer;
+}
+.all_tit{
+  color:#FFF;
+  background-color:#25AAE3;
+  overflow:hidden;
+}
+.all_tit span{
+  background-color:#F6F6F6;
+  color:#000;
+  display:inline-table;
+  padding:5px 20px 5px 20px;
+  overflow:hidden;
+}
+.all_cont{
+  padding:10px;
+}
+.all_cont table,.all_cont table tr td{
+  border:1px solid #CCF;
+}
+.fontcbai,.fontcbai a{
+  color:#FFF;
+}
+.fontchei{
+  color:#333;
+}
+.fontwcu{
+  font-weight:bold;
+}
+.button1{
+  background-color:#0DB1D4;
+  color:#FFF;
+  padding:5px;
+  border:none;
+}
+
+/*鑿滃崟*/
+#box{
+    width:200px;
+    float:left;
+}
+.div_submenu ul li a{
+  color: #CAD3E0;
+}
+.div_submenu h5:hover{
+  background: #101D30;
+  color: #FFF;
+}
+h5{
+    font-weight:normal;
+    text-align:center;
+    font-size:14px;
+    color:#CAD3E0;
+    line-height:25px;
+    margin:0px;
+    clear:both;
+    cursor:pointer;
+    border-width:1px 0px;
+}
+ul.menu{
+    list-style-type:none;
+    border:solid 0px #aaaaaa;
+    margin-top:0px;
+    background-color: #404549;
+}
+ul.menu li{
+    line-height:25px;
+    font-size:12px;
+    color:green;
+    text-align:center;
+}
+ul.menu li:hover{
+    background: #5C6369;
+    text-align:center;
+}
+ul.menu li a{
+padding: 0px 48px;
+display: block;
+}
+div.submenu{
+
+}
+/*鑿滃崟缁撴潫*/
